@@ -7,7 +7,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
- * The type Fibonacci test.
+ * Clase para probar fibonacci
  */
 class FibonacciTest {
 
@@ -15,6 +15,7 @@ class FibonacciTest {
 
     /**
      * Sets up.
+     * Para probar la clase Fibonacci
      */
     @BeforeEach
     void setUp() {
@@ -23,7 +24,7 @@ class FibonacciTest {
     }
 
     /**
-     * Calcular 0.
+     * Calcular el fibonacci de 0 que es 1.
      */
     @Test
     public void calcular_0() {
@@ -33,7 +34,7 @@ class FibonacciTest {
     }
 
     /**
-     * Calcular 1.
+     * Calcular el fibonacci de 1 que es 1.
      */
     @Test
     public void calcular_1() {
@@ -44,10 +45,10 @@ class FibonacciTest {
     }
 
     /**
-     * Calcular 6.
+     * Calcular el fibonacci de un numero superior a 1 (el 15 con valor 987)
      */
     @Test
-    public void calcular_6() {
+    public void calcular_15() {
         int testIndex = 15;
         int expectedResult = 987;
 
@@ -55,7 +56,7 @@ class FibonacciTest {
     }
 
     /**
-     * Calcular negative.
+     * Calcular el fibonacci de -1 que debe generar error.
      */
     @Test
     public void calcular_negative() {
