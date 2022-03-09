@@ -76,25 +76,29 @@ Current scope:     <a href="../../index.html">all classes</a>
 <div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package org.uma.ingsoft.fibonacci;
 <i class="no-highlight">2</i>&nbsp;
 <i class="no-highlight">3</i>&nbsp;/**
-<i class="no-highlight">4</i>&nbsp; * The type Fibonacci.
+<i class="no-highlight">4</i>&nbsp; * El tipo Fibonacci.
 <i class="no-highlight">5</i>&nbsp; */
 <b class="fc"><i class="no-highlight">6</i>&nbsp;public class Fibonacci {</b>
 <i class="no-highlight">7</i>&nbsp;    /**
-<i class="no-highlight">8</i>&nbsp;     * Calcular int.
+<i class="no-highlight">8</i>&nbsp;     * Calcular Fibonacci.
 <i class="no-highlight">9</i>&nbsp;     *
-<i class="no-highlight">10</i>&nbsp;     * @param indice the indice
-<i class="no-highlight">11</i>&nbsp;     * @return the int
-<i class="no-highlight">12</i>&nbsp;     */
-<i class="no-highlight">13</i>&nbsp;    public int calcular(int indice) {
-<b class="fc"><i class="no-highlight">14</i>&nbsp;        if (indice &lt; 0) {</b>
-<b class="fc"><i class="no-highlight">15</i>&nbsp;            throw new IllegalArgumentException(&quot;Fibonacci es para positivos.&quot;);</b>
-<b class="fc"><i class="no-highlight">16</i>&nbsp;        } else if (indice &lt;= 1) {</b>
-<b class="fc"><i class="no-highlight">17</i>&nbsp;            return 1;</b>
-<i class="no-highlight">18</i>&nbsp;        } else {
-<b class="fc"><i class="no-highlight">19</i>&nbsp;            return calcular(indice - 1) + calcular(indice - 2);</b>
-<i class="no-highlight">20</i>&nbsp;        }
-<i class="no-highlight">21</i>&nbsp;    }
-<i class="no-highlight">22</i>&nbsp;}
+<i class="no-highlight">10</i>&nbsp;     * @param indice el indice
+<i class="no-highlight">11</i>&nbsp;     * @return
+<i class="no-highlight">12</i>&nbsp;     *   Si se pasa un numero negativo devuelve una excepcion (Fibonacci es para positivos)
+<i class="no-highlight">13</i>&nbsp;     *   Si el indice es 0 0 1 el valor es 1
+<i class="no-highlight">14</i>&nbsp;     *   Si el indice es superior a 1
+<i class="no-highlight">15</i>&nbsp;     *   el calculo de fibonacci = fibonacci (indice-1) + fibonacci (indice-2)
+<i class="no-highlight">16</i>&nbsp;     */
+<i class="no-highlight">17</i>&nbsp;    public int calcular(int indice) {
+<b class="fc"><i class="no-highlight">18</i>&nbsp;        if (indice &lt; 0) {</b>
+<b class="fc"><i class="no-highlight">19</i>&nbsp;            throw new IllegalArgumentException(&quot;Fibonacci es para positivos.&quot;);</b>
+<b class="fc"><i class="no-highlight">20</i>&nbsp;        } else if (indice &lt;= 1) {</b>
+<b class="fc"><i class="no-highlight">21</i>&nbsp;            return 1;</b>
+<i class="no-highlight">22</i>&nbsp;        } else {
+<b class="fc"><i class="no-highlight">23</i>&nbsp;            return calcular(indice - 1) + calcular(indice - 2);</b>
+<i class="no-highlight">24</i>&nbsp;        }
+<i class="no-highlight">25</i>&nbsp;    }
+<i class="no-highlight">26</i>&nbsp;}
 </div>
 </pre>
 </div>
@@ -121,7 +125,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2022-03-09 16:57</div>
+    <div style="float:right;">generated on 2022-03-09 17:16</div>
 </div>
 </body>
 </html>

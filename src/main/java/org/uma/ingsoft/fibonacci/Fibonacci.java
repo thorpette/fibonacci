@@ -1,14 +1,18 @@
 package org.uma.ingsoft.fibonacci;
 
 /**
- * The type Fibonacci.
+ * El tipo Fibonacci.
  */
 public class Fibonacci {
     /**
-     * Calcular int.
+     * Calcular Fibonacci.
      *
-     * @param indice the indice
-     * @return the int
+     * @param indice el indice
+     * @return
+     *   Si se pasa un numero negativo devuelve una excepcion (Fibonacci es para positivos)
+     *   Si el indice es 0 0 1 el valor es 1
+     *   Si el indice es superior a 1
+     *   el calculo de fibonacci = fibonacci (indice-1) + fibonacci (indice-2)
      */
     public int calcular(int indice) {
         if (indice < 0) {
